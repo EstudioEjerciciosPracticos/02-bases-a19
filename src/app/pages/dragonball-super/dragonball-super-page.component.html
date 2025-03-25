@@ -3,7 +3,7 @@
 <section class="row">
   <div class="col-12 col-sm-6">
     <app-dragonball-character-add
-      (newCharacter)="addCharacter($event)"
+      (newCharacter)="dragonbollServices.addCharacter($event)"
     >
     </app-dragonball-character-add>
   </div>
@@ -11,7 +11,7 @@
   <div class="col-12 col-sm-6">
     <dragonball-character-list
       listName="Listado de personajes"
-      [characters]="characters()"
+      [characters]="dragonbollServices.characters()"
     >
   </dragonball-character-list>
 
